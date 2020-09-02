@@ -1,0 +1,60 @@
+.team{
+    &__title{
+        text-align: center;
+        margin-top: 2rem;
+        .title{
+            @include main_font(3.4rem,300,$color_black_3); 
+        }
+        .subtitle{
+            @include italic_font;
+        }
+    }
+    &__cards{
+        width: 100%;
+        max-width: 103rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15rem;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .photo{
+            height: 17rem;
+            width: 17rem;
+        }
+        .name{
+            @include main_font(2.4rem,400,$color_gray_3);
+        }
+        .position{
+            @include main_font(1.3rem,400, $color_gray_3);
+        }
+    }
+    .up{
+        margin-top: 9rem;
+    }
+    &__icon{
+        margin-top: 1rem;
+    }
+    .icon{
+        margin: 0 .5rem 0 .5rem ;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .team{
+        &__cards{
+            flex-direction: column;
+            margin-top: 5rem;
+        }
+        &__card{
+            margin: 1.5rem 0;
+        }
+        .up{
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.about-us{
+    background-color: $color_background;
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 400px 46px 400px 1fr;
+        grid-template-rows: repeat(4, 20rem);
+        grid-gap: 20px;
+    }
+    &__years:nth-child(3){
+            grid-row-start: 1;
+            grid-row-end: 5;
+            grid-column-start:3; 
+            grid-column-end:4;
+    }
+    &__years:nth-child(18){
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start:1; 
+            grid-column-end:6;
+            height:270px;
+    }
+    &__years:nth-child(19){
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start:1; 
+            grid-column-end:6;
+    }  
+    &__years:nth-child(2){
+            padding-top: 13rem;
+            .year{
+                @include main_font(4.8rem,400,$color_white);
+                text-align: end;
+            }
+            .text{
+                @include main_font(1.5rem,300,$color_white);
+                text-align: end;
+            }  
+    }
+    &__years:nth-child(8){
+            padding-top: 3.2rem;
+            .year{
+                @include main_font(4.8rem,400,$color_white);
+                text-align: start;
+            }
+            .text{
+                @include main_font(1.5rem,300,$color_white);
+                text-align: start;
+            }  
+    }
+    &__years:nth-child(11){
+            padding-top: 5.6rem;
+            .year{
+                @include main_font(4.8rem,400,$color_white);
+                text-align: end;
+            }
+            .text{
+                @include main_font(1.5rem,300,$color_white);
+                text-align: end;
+            }  
+    }
+    &__years:nth-child(16){
+            padding-top: 6.5rem;
+            .year{
+                @include main_font(4.8rem,400,$color_white);
+                text-align: start;
+            }
+            .text{
+                @include main_font(1.5rem,300,$color_white);
+                text-align: start;
+            }  
+    }  
+    &__city{
+        background: no-repeat center;
+        width: 100%;
+        height: auto;
+        margin-bottom: -5px;
+    }
+    
+}
+
+
+
+
+

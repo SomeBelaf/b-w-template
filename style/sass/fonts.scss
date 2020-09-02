@@ -1,0 +1,18 @@
+$main_font: 'Roboto', sans-serif;
+$second_font: 'Montserrat', sans-serif;
+$italic_font: 'Merriweather', serif;
+
+
+@mixin main_font($f-size, $f-weight, $color) {
+font-family: $main_font;
+color: $color;
+font-size: $f_size;
+font-weight: $f-weight;  
+line-height: 1.2;
+}
+@mixin italic_font {
+font-family: $italic_font;
+color: $color_gray;
+font-size: 1.6rem;
+font-weight: 300; 
+}

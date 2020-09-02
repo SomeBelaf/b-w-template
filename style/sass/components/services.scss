@@ -1,0 +1,70 @@
+.services{
+    position: relative;
+    .background{
+        position: absolute;
+        background-size: cover;
+        background: center no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        padding-bottom: 25rem;
+    }
+    &__title{
+        padding-top: 20rem;
+        position: relative;
+        text-align: center;
+        .title{
+            @include main_font(3.4rem, 300, $color_white);
+        }
+        .suptitle{
+           @include italic_font; 
+           
+        }
+    }
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 22rem 0 44.7rem;  
+    }
+    &__service{
+        text-align: center;
+        width: 100%;
+        max-width: 33rem;
+        .name{
+            @include main_font(2.6rem, 300, $color_white);
+            margin-top: 4rem;
+        }
+        .description{
+            @include main_font(1.8rem, 300, $color_gray_3);
+            margin-top: 3rem;
+        }
+    }
+    &__button{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+@media screen and (max-width:1000px){
+    .services{
+        height: 190rem;
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            margin: 15rem 0 0 0;
+        }
+        &__service{
+            margin: 3rem 0;
+        }
+    }
+}
+
+
+
+
+
+
+  

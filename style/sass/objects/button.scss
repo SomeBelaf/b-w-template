@@ -1,0 +1,15 @@
+.button{
+    text-transform: uppercase;
+    font-family: $second_font;
+    font-size: 1.3rem;
+    color: $color_black;
+    padding: 1.9em 3.8em;
+    background: $color_white;
+    border:.2rem $color_black solid; 
+}
+.button:hover{
+    background-color: $color_black;
+    color: $color_white;
+    transition: .5s;
+    cursor: pointer;
+}
