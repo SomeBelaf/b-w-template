@@ -1,6 +1,6 @@
 # b-w-template
 
-### Live Demo - https://someimya.github.io/b-w-template/
+### Live Demo - https://somebelaf.github.io/b-w-template/
 
 Simple one page landing, using pure **HTML** and **SCSS**. 
 
